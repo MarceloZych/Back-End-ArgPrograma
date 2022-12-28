@@ -21,7 +21,7 @@ public class Persona {
     
     private String nombre;
     private String apellido;
-    private int dni;
+    private String img;
     private String correoElectronico;
     
     @Temporal(TemporalType.DATE)
@@ -34,11 +34,11 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(Long id, String nombre, String apellido, int dni, String correoElectronico, Date fechaNacimiento, String acercaDe) {
+    public Persona(Long id, String nombre, String apellido, String img, String correoElectronico, Date fechaNacimiento, String acercaDe) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dni = dni;
+        this.img = img;
         this.correoElectronico = correoElectronico;
         this.fechaNacimiento = fechaNacimiento;
         this.acercaDe = acercaDe;

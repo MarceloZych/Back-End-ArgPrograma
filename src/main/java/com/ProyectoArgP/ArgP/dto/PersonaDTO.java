@@ -10,7 +10,7 @@ public class PersonaDTO {
     
     private String nombre;
     private String apellido;
-    private int dni;
+    private String img;
     private String correoElectronico;
 
     private Date fechaNacimiento;
@@ -20,11 +20,11 @@ public class PersonaDTO {
     public PersonaDTO() {
     }
 
-    public PersonaDTO(Long id, String nombre, String apellido, int dni, String correoElectronico, Date fechaNacimiento, String acercaDe) {
+    public PersonaDTO(Long id, String nombre, String apellido, String img, String correoElectronico, Date fechaNacimiento, String acercaDe) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dni = dni;
+        this.img = img;
         this.correoElectronico = correoElectronico;
         this.fechaNacimiento = fechaNacimiento;
         this.acercaDe = acercaDe;

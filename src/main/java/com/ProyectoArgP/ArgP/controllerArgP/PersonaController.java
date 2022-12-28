@@ -56,7 +56,7 @@ public class PersonaController {
     public Persona editPersona (@PathVariable int id,
                                 @RequestParam ("nombre") String nuevoNombre,
                                 @RequestParam ("apellido") String nuevoApellido,
-                                @RequestParam ("dni") int nuevoDni,
+                                @RequestParam ("img") String nuevoImg,
                                 @RequestParam("correoElectronico") String nuevoCorreo,
                                 @RequestParam("fechaNacimiento") Date nuevaFecha,
                                 @RequestParam("acercaDe") String nuevoAcercaDe){
@@ -66,7 +66,7 @@ public class PersonaController {
         //para desacoplar mejor aún el código en un nuevo método
         person.setApellido(nuevoApellido);
         person.setNombre(nuevoNombre);
-        person.setDni(nuevoDni);
+        person.setImg(nuevoImg);
         person.setCorreoElectronico(nuevoCorreo);
         person.setFechaNacimiento(nuevaFecha);
         person.setAcercaDe(nuevoAcercaDe);
